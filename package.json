@@ -7,9 +7,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
+    "react-icons": "^3.10.0",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-toastify": "^6.0.5",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
