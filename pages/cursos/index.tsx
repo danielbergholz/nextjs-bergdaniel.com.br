@@ -50,7 +50,7 @@ export default function Cursos({
       <CourseList>
         {CoursesPlaylists.map((playlist: PlaylistItem) => (
           <Course key={playlist.id}>
-            <Link href={`/cursos/${playlist.slug}`}>
+            <Link href="/cursos/[slug]" as={`/cursos/${playlist.slug}`}>
               <a>
                 <Thumbnail>
                   <img
@@ -95,7 +95,7 @@ export default function Cursos({
       <CourseList>
         {OtherPlaylists.map((playlist: PlaylistItem) => (
           <Course key={playlist.id}>
-            <Link href={`/cursos/${playlist.slug}`}>
+            <Link href="/cursos/[slug]" as={`/cursos/${playlist.slug}`}>
               <a>
                 <Thumbnail>
                   <img
