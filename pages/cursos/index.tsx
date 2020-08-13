@@ -55,7 +55,7 @@ export default function Cursos({
                 <Thumbnail>
                   <img
                     src={playlist.snippet.thumbnails.maxres.url}
-                    alt="Javascript"
+                    alt={playlist.snippet.title}
                   />
                 </Thumbnail>
               </a>
@@ -100,7 +100,7 @@ export default function Cursos({
                 <Thumbnail>
                   <img
                     src={playlist.snippet.thumbnails.maxres.url}
-                    alt="Javascript"
+                    alt={playlist.snippet.title}
                   />
                 </Thumbnail>
               </a>
