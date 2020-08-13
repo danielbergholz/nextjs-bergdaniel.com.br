@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 
@@ -45,11 +44,6 @@ export default function Cursos({
   CoursesPlaylists,
   OtherPlaylists,
 }: PropTypes): JSX.Element {
-  useEffect(() => {
-    console.log(CoursesPlaylists);
-    console.log(OtherPlaylists);
-  }, []);
-
   return (
     <Container>
       <p>Cursos gratuitos</p>
@@ -128,23 +122,6 @@ export const getStaticProps: GetStaticProps = async () => {
       maxResults: 50,
     },
   });
-
-  // const filteredData: Video[] = response.data.items.filter(
-  //   (video: Video) => video.snippet.title !== 'Private video'
-  // );
-  // if (filteredData[0].snippet.title.includes('-')) {
-  //   filteredData.forEach((element: Video) => {
-  //     const { title } = element.snippet;
-  //     const splitTitle = title.split('- ')[1];
-  //     const splitSplitTitle = splitTitle.split(':')[0];
-  //     element.snippet.mediumTitle = splitTitle;
-  //     element.snippet.shortTitle = splitSplitTitle;
-  //   });
-  // }
-  // setData(filteredData);
-  // if (!selectedVideo.snippet.resourceId) {
-  //   setSelectedVideo(response.data.items[0]);
-  // }
 
   const CoursesPlaylists: PlaylistItem[] = [];
   const OtherPlaylists: PlaylistItem[] = [];
