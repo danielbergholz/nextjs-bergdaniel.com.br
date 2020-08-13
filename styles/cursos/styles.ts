@@ -5,6 +5,7 @@ export const Container = styled.div`
   margin: 0 auto;
   animation: loadAnimation;
   animation-duration: 500ms;
+  padding-bottom: 40px;
 
   > p {
     margin-top: 40px;

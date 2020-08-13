@@ -1,6 +1,8 @@
-import React from 'react';
+import { useEffect } from 'react';
+import { GetStaticProps } from 'next';
 import Link from 'next/link';
 
+import api from '../../services/api';
 import {
   Container,
   Course,
@@ -9,44 +11,65 @@ import {
   Gold,
 } from '../../styles/cursos/styles';
 
-const Cursos: React.FC = () => {
+interface PlaylistItem {
+  kind: string;
+  etag: string;
+  id: string;
+  slug?: string;
+  snippet: {
+    publishedAt: string;
+    channelId: string;
+    title: string;
+    description: '';
+    thumbnails: {
+      maxres: {
+        url: string;
+        width: number;
+        height: number;
+      };
+    };
+    channelTitle: string;
+    localized: {
+      title: string;
+      description: '';
+    };
+  };
+}
+
+interface PropTypes {
+  CoursesPlaylists: PlaylistItem[];
+  OtherPlaylists: PlaylistItem[];
+}
+
+export default function Cursos({
+  CoursesPlaylists,
+  OtherPlaylists,
+}: PropTypes): JSX.Element {
+  useEffect(() => {
+    console.log(CoursesPlaylists);
+    console.log(OtherPlaylists);
+  }, []);
+
   return (
     <Container>
       <p>Cursos gratuitos</p>
       <CourseList>
-        <Course>
-          <Link href="/cursos/javascript">
-            <Thumbnail>
-              <img
-                src="https://i.ytimg.com/vi/pL9nX6Ac2Lc/maxresdefault.jpg"
-                alt="Javascript"
-              />
-            </Thumbnail>
-          </Link>
-          <span> Curso de Javascript</span>
-        </Course>
-        <Course>
-          <Link href="/cursos/terminallinux">
-            <Thumbnail>
-              <img
-                src="https://i.ytimg.com/vi/VRR3V42EdSg/maxresdefault.jpg"
-                alt="Terminal Linux"
-              />
-            </Thumbnail>
-          </Link>
-          <span> Curso de Terminal Linux</span>
-        </Course>
-        <Course>
-          <Link href="/cursos/trello">
-            <Thumbnail>
-              <img
-                src="https://i.ytimg.com/vi/ck7WWHaAgpU/maxresdefault.jpg"
-                alt="Trello"
-              />
-            </Thumbnail>
-          </Link>
-          <span> Curso de Trello</span>
-        </Course>
+        {CoursesPlaylists.map((playlist: PlaylistItem) => (
+          <Course key={playlist.id}>
+            <Link href={`/cursos/${playlist.slug}`}>
+              <a>
+                <Thumbnail>
+                  <img
+                    src={playlist.snippet.thumbnails.maxres.url}
+                    alt="Javascript"
+                  />
+                </Thumbnail>
+              </a>
+            </Link>
+            <span>{playlist.snippet.title}</span>
+          </Course>
+        ))}
+
         <Course>
           <Thumbnail id="thumbnail">
             <p> em breve</p>
@@ -73,31 +96,82 @@ const Cursos: React.FC = () => {
           <span> Curso de Node</span>
         </Course>
       </CourseList>
+
+      <p>Outros</p>
+      <CourseList>
+        {OtherPlaylists.map((playlist: PlaylistItem) => (
+          <Course key={playlist.id}>
+            <Link href={`/cursos/${playlist.slug}`}>
+              <a>
+                <Thumbnail>
+                  <img
+                    src={playlist.snippet.thumbnails.maxres.url}
+                    alt="Javascript"
+                  />
+                </Thumbnail>
+              </a>
+            </Link>
+            <span>{playlist.snippet.title}</span>
+          </Course>
+        ))}
+      </CourseList>
     </Container>
   );
-};
-
-export default Cursos;
-
-{
-  /* <Course>
-  <Link
-    to={{
-      pathname: '/cursos/javascript',
-      state: {
-        courseName: 'Curso de Javascript',
-        playlistId: 'PLbV6TI03ZWYVP6EByYoUxZJeZaqitHi9r',
-        slidesLink: 'https://mega.nz/folder/cCRglawa#xS4MEA4NrhBgplCCLxqFDA',
-      },
-    }}
-  >
-    <Thumbnail>
-      <img
-        src="https://i.ytimg.com/vi/pL9nX6Ac2Lc/maxresdefault.jpg"
-        alt="Javascript"
-      />
-    </Thumbnail>
-  </Link>
-  <span> Curso de Javascript</span>
-</Course>; */
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { data } = await api.get('/playlists', {
+    params: {
+      part: 'snippet',
+      key: process.env.YOUTUBE_API_KEY,
+      channelId: process.env.CHANNEL_ID,
+      maxResults: 50,
+    },
+  });
+
+  // const filteredData: Video[] = response.data.items.filter(
+  //   (video: Video) => video.snippet.title !== 'Private video'
+  // );
+  // if (filteredData[0].snippet.title.includes('-')) {
+  //   filteredData.forEach((element: Video) => {
+  //     const { title } = element.snippet;
+  //     const splitTitle = title.split('- ')[1];
+  //     const splitSplitTitle = splitTitle.split(':')[0];
+  //     element.snippet.mediumTitle = splitTitle;
+  //     element.snippet.shortTitle = splitSplitTitle;
+  //   });
+  // }
+  // setData(filteredData);
+  // if (!selectedVideo.snippet.resourceId) {
+  //   setSelectedVideo(response.data.items[0]);
+  // }
+
+  const CoursesPlaylists: PlaylistItem[] = [];
+  const OtherPlaylists: PlaylistItem[] = [];
+
+  data.items.forEach((item: PlaylistItem) => {
+    if (item.snippet.title.toLowerCase().includes('curso')) {
+      CoursesPlaylists.push(item);
+    } else {
+      OtherPlaylists.push(item);
+    }
+  });
+
+  CoursesPlaylists.forEach((item: PlaylistItem) => {
+    item.slug = item.snippet.title
+      .split('Curso de ')[1]
+      .toLowerCase()
+      .replace(/ /g, '-');
+  });
+
+  OtherPlaylists.forEach((item: PlaylistItem) => {
+    item.slug = item.snippet.title.toLowerCase().replace(/ /g, '-');
+  });
+
+  return {
+    props: {
+      CoursesPlaylists,
+      OtherPlaylists,
+    },
+  };
+};
