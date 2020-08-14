@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
+import Head from 'next/head';
 
 import api from '../../services/api';
 import {
@@ -45,71 +46,85 @@ export default function Cursos({
   OtherPlaylists,
 }: PropTypes): JSX.Element {
   return (
-    <Container>
-      <p>Cursos gratuitos</p>
-      <CourseList>
-        {CoursesPlaylists.map((playlist: PlaylistItem) => (
-          <Course key={playlist.id}>
-            <Link href="/cursos/[slug]" as={`/cursos/${playlist.slug}`}>
-              <a>
-                <Thumbnail>
-                  <img
-                    src={playlist.snippet.thumbnails.maxres.url}
-                    alt={playlist.snippet.title}
-                  />
-                </Thumbnail>
-              </a>
-            </Link>
-            <span>{playlist.snippet.title}</span>
+    <>
+      <Head>
+        <title>Cursos | Daniel Berg</title>
+        <meta
+          name="og:title"
+          property="og:title"
+          content="Cursos e tutoriais"
+        />
+        <meta
+          name="description"
+          content="Cursos gratuitos de Desenvolvimento Web, Trello e Linux"
+        />
+      </Head>
+      <Container>
+        <p>Cursos gratuitos</p>
+        <CourseList>
+          {CoursesPlaylists.map((playlist: PlaylistItem) => (
+            <Course key={playlist.id}>
+              <Link href="/cursos/[slug]" as={`/cursos/${playlist.slug}`}>
+                <a>
+                  <Thumbnail>
+                    <img
+                      src={playlist.snippet.thumbnails.maxres.url}
+                      alt={playlist.snippet.title}
+                    />
+                  </Thumbnail>
+                </a>
+              </Link>
+              <span>{playlist.snippet.title}</span>
+            </Course>
+          ))}
+
+          <Course>
+            <Thumbnail id="thumbnail">
+              <p> em breve</p>
+            </Thumbnail>
+            <span> Curso de CSS</span>
           </Course>
-        ))}
+        </CourseList>
 
-        <Course>
-          <Thumbnail id="thumbnail">
-            <p> em breve</p>
-          </Thumbnail>
-          <span> Curso de CSS</span>
-        </Course>
-      </CourseList>
-
-      <p>
-        Cursos
-        <Gold> premium</Gold>
-      </p>
-      <CourseList>
-        <Course>
-          <Thumbnail id="thumbnail">
-            <p> em breve</p>
-          </Thumbnail>
-          <span> Curso de React</span>
-        </Course>
-        <Course>
-          <Thumbnail id="thumbnail">
-            <p> em breve</p>
-          </Thumbnail>
-          <span> Curso de Node</span>
-        </Course>
-      </CourseList>
-
-      <p>Outros</p>
-      <CourseList>
-        {OtherPlaylists.map((playlist: PlaylistItem) => (
-          <Course key={playlist.id}>
-            <Link href="/cursos/[slug]" as={`/cursos/${playlist.slug}`}>
-              <a>
-                <Thumbnail>
-                  <img
-                    src={playlist.snippet.thumbnails.maxres.url}
-                    alt={playlist.snippet.title}
-                  />
-                </Thumbnail>
-              </a>
-            </Link>
-            <span>{playlist.snippet.title}</span>
+        <p>
+          Cursos
+          <Gold> premium</Gold>
+        </p>
+        <CourseList>
+          <Course>
+            <Thumbnail id="thumbnail">
+              <p> em breve</p>
+            </Thumbnail>
+            <span> Curso de React</span>
           </Course>
-        ))}
-      </CourseList>
-    </Container>
+          <Course>
+            <Thumbnail id="thumbnail">
+              <p> em breve</p>
+            </Thumbnail>
+            <span> Curso de Node</span>
+          </Course>
+        </CourseList>
+
+        <p>Outros</p>
+        <CourseList>
+          {OtherPlaylists.map((playlist: PlaylistItem) => (
+            <Course key={playlist.id}>
+              <Link href="/cursos/[slug]" as={`/cursos/${playlist.slug}`}>
+                <a>
+                  <Thumbnail>
+                    <img
+                      src={playlist.snippet.thumbnails.maxres.url}
+                      alt={playlist.snippet.title}
+                    />
+                  </Thumbnail>
+                </a>
+              </Link>
+              <span>{playlist.snippet.title}</span>
+            </Course>
+          ))}
+        </CourseList>
+      </Container>
+    </>
   );
 }
 

@@ -1,5 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { GetStaticPaths, GetStaticProps } from 'next';
+import Head from 'next/head';
 import React, { useState, useCallback } from 'react';
 import { IoMdDownload } from 'react-icons/io';
 import PerfectScrollbar from 'react-perfect-scrollbar';
@@ -74,11 +75,13 @@ interface PropTypes {
     courseName: string;
     slidesLink: string;
   };
+  slug: string;
 }
 
 export default function VideoPlayer({
   data,
   courseInfo,
+  slug,
 }: PropTypes): JSX.Element {
   const [selectedVideo, setSelectedVideo] = useState<Video>(data[0]);
 
@@ -97,6 +100,15 @@ export default function VideoPlayer({
 
   return (
     <>
+      <Head>
+        <title>{slug} | Daniel Berg</title>
+        <meta
+          name="og:title"
+          property="og:title"
+          content={courseInfo.courseName}
+        />
+        <meta name="description" content={selectedVideo.snippet.description} />
+      </Head>
       <Container>
         <FlexboxLeft>
           <p>{courseInfo.courseName}</p>
@@ -144,7 +156,10 @@ export default function VideoPlayer({
                     key={String(position)}
                     onClick={(): void => changeVideo(position)}
                   >
-                    <img src={thumbnails.medium.url} alt="" />
+                    <img
+                      src={thumbnails.medium.url}
+                      alt={video.snippet.title}
+                    />
                     <span>{shortTitle}</span>
                     <small>{mediumTitle}</small>
                   </Video>
