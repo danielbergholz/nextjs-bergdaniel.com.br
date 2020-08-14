@@ -22,11 +22,11 @@ const BergDaniel: React.FC = () => {
       </strong>
       <strong>
         - Tecnologias do Frontend:
-        <span> React</span>
+        <span> React, NextsJS</span>
       </strong>
       <strong>
         - Hospedagem:
-        <span> Netlify</span>
+        <span> Netlify, Vercel</span>
       </strong>
       <strong>
         - Contexto:
@@ -45,16 +45,18 @@ const BergDaniel: React.FC = () => {
         <span>
           {' '}
           Para tornar isso possível, tive que consumir a API do YouTube para
-          pegar dados de playlists e vídeos. Usei a arquitetura de single page
-          application (SPA) com React e Typescript para a página ter um UX
-          melhor e mais fluido. O botão de trocar o tema de light para dark foi
-          feito com o react context. O site final é estático, então consegui
-          hospedar no Netlify, e o formulário da aba de contato foi realizado
-          com a ajuda de um serviço chamado Formspree.
+          pegar dados de playlists e vídeos. A primeira versão desse site eu
+          usei a arquitetura de single page application (SPA) com React e
+          Typescript para a página ter um UX melhor e mais fluido. O botão de
+          trocar o tema de light para dark foi feito com o react context. O site
+          final é estático, então hospedei inicialmente no Netlify, e o
+          formulário da aba de contato foi realizado com a ajuda de um serviço
+          chamado Formspree. Atualmente o site foi refeito com NextJS para
+          melhorar o SEO, e acabei optando pela hospedagem da vercel.
         </span>
       </strong>
       <ButtonContainer>
-        <Button link="https://github.com/danielbergholz/bergdaniel.com.br">
+        <Button link="https://github.com/danielbergholz/nextjs-bergdaniel.com.br">
           <FaGithub size={25} color="#fff" />
           Código Fonte
         </Button>

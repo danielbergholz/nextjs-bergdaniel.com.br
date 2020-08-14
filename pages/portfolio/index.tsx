@@ -13,10 +13,21 @@ const Portfolio: React.FC = () => {
         <span> Graduando em Engenharia de Redes de Comunicações na UnB</span>
       </strong>
       <strong>
+        - Bootcamp:
+        <span> Sou formado no Bootcamp GoStack da Rocketseat</span>
+      </strong>
+      <strong>
         - Estágio:
         <span>
           {' '}
           6 meses de experiência em desenvolvimento mobile com React Native
+        </span>
+      </strong>
+      <strong>
+        - Freelancer:
+        <span>
+          {' '}
+          Atuo como desenvolvedor fullstack freelancer desde junho de 2020
         </span>
       </strong>
 
@@ -64,6 +75,29 @@ const Portfolio: React.FC = () => {
       </Project>
 
       <Project>
+        <img src="/assets/rocketseat.png" alt="Rocketseat logo" />
+        <Text>
+          <strong>
+            - Função:
+            <span> Desenvolvedor Fullstack</span>
+          </strong>
+          <br />
+          <strong>
+            - Descrição:
+            <span>
+              {' '}
+              Bootcamp GoStack. Abordou os seguintes temas: ReactJS, React
+              Native e NodeJS com Typescript.
+            </span>
+          </strong>
+
+          <Button link="http://app.rocketseat.com.br/api/certificates/pdf/6b76d8c5-fe76-4322-9c0d-bbf6d11662ed">
+            Ver mais
+          </Button>
+        </Text>
+      </Project>
+
+      <Project>
         <img src="/assets/astro_muri.png" alt="Astro Muri" />
         <Text>
           <strong>
@@ -105,7 +139,7 @@ const Portfolio: React.FC = () => {
               bergdaniel.com.br é o site que você está acessando. Eu o criei do
               completo zero, desde a concepção da arquitetura e navegação de
               páginas no whimsical e o design no Figma até o desenvolvimento com
-              React.
+              NextJS.
             </span>
           </strong>
           <Link href="/portfolio/bergdaniel">
