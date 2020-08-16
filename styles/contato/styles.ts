@@ -38,6 +38,8 @@ export const Contact = styled.div`
 
   img {
     margin-right: 40px;
+    border-radius: 50%;
+    border: 6px solid #bb9878;
   }
 
   @media (max-width: 700px) {

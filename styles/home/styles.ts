@@ -17,9 +17,15 @@ export const Hello = styled.div`
   align-items: center;
   justify-content: center;
 
+  img {
+    border-radius: 50%;
+    border: 6px solid #bb9878;
+  }
+
   h1 {
     margin-left: 60px;
     font-size: 70px;
+    border-bottom: 6px solid #bb9878;
   }
 
   @media (max-width: 450px) {

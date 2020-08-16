@@ -34,7 +34,7 @@ const Home: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaYoutube size={36} />
+              <FaYoutube size={36} color="#bb9878" />
               <p>Daniel Berg</p>
             </a>
 
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram size={36} />
+              <FaInstagram size={36} color="#bb9878" />
               <p>@berg.dev</p>
             </a>
             <a
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub size={36} />
+              <FaGithub size={36} color="#bb9878" />
               <p>danielbergholz</p>
             </a>
           </SocialMedia>
