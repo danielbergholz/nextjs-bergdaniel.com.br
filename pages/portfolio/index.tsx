@@ -60,7 +60,7 @@ const Portfolio: React.FC = () => {
             </strong>
 
             <Button link="https://app.bossabox.com/u/daniel-bergholz">
-              Ver mais
+              ver mais
             </Button>
           </Text>
         </Project>
@@ -82,7 +82,7 @@ const Portfolio: React.FC = () => {
             </strong>
 
             <Button link="https://www.upwork.com/o/profiles/users/~01d7d71fa714d6ce9d/">
-              Ver mais
+              ver mais
             </Button>
           </Text>
         </Project>
@@ -105,7 +105,7 @@ const Portfolio: React.FC = () => {
             </strong>
 
             <Button link="http://app.rocketseat.com.br/api/certificates/pdf/6b76d8c5-fe76-4322-9c0d-bbf6d11662ed">
-              Ver mais
+              ver mais
             </Button>
           </Text>
         </Project>
@@ -131,7 +131,7 @@ const Portfolio: React.FC = () => {
             </strong>
             <Link href="/portfolio/astromuri">
               <a>
-                <Button>Ver mais</Button>
+                <Button>ver mais</Button>
               </a>
             </Link>
           </Text>
@@ -157,7 +157,7 @@ const Portfolio: React.FC = () => {
             </strong>
             <Link href="/portfolio/bergdaniel">
               <a>
-                <Button>Ver mais</Button>
+                <Button>ver mais</Button>
               </a>
             </Link>
           </Text>

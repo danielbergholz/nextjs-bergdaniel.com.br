@@ -43,7 +43,7 @@ const Contato: React.FC = () => {
         draggable: true,
         progress: undefined,
         bodyStyle: {
-          fontFamily: 'Roboto',
+          fontFamily: 'Source Sans Pro',
           fontSize: 18,
           color: '#272727',
         },
@@ -59,7 +59,7 @@ const Contato: React.FC = () => {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      bodyStyle: { fontFamily: 'Roboto', fontSize: 20 },
+      bodyStyle: { fontFamily: 'Source Sans Pro', fontSize: 20 },
     });
 
     setLoading(1);
@@ -79,7 +79,7 @@ const Contato: React.FC = () => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            bodyStyle: { fontFamily: 'Roboto', fontSize: 20 },
+            bodyStyle: { fontFamily: 'Source Sans Pro', fontSize: 20 },
           });
         } else {
           toast.error('😓 Erro ao enviar o e-mail', {
@@ -90,7 +90,7 @@ const Contato: React.FC = () => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            bodyStyle: { fontFamily: 'Roboto', fontSize: 20 },
+            bodyStyle: { fontFamily: 'Source Sans Pro', fontSize: 20 },
           });
         }
 
@@ -111,7 +111,7 @@ const Contato: React.FC = () => {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          bodyStyle: { fontFamily: 'Roboto', fontSize: 20 },
+          bodyStyle: { fontFamily: 'Source Sans Pro', fontSize: 20 },
         });
 
         setLoading(0);

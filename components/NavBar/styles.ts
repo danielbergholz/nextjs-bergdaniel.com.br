@@ -7,12 +7,14 @@ interface ContainerProps {
 
 export const Background = styled.div`
   position: relative;
-  background-color: #272727;
+  background-color: #25262a;
   color: #fff;
+  padding-top: 4px;
+  padding-bottom: 4px;
 
   a {
     color: #fff;
-    font-family: 'Anton', Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   svg {
@@ -49,7 +51,7 @@ export const MenuIcon = styled.a<ContainerProps>`
       props.isOpen ? 'rotate(-45deg) translate3d(9px, -8px, 0)' : ''};
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 850px) {
     display: block;
   }
 `;
@@ -63,14 +65,13 @@ export const Container = styled.div<ContainerProps>`
   align-items: center;
 
   li:nth-child(${(props): number => props.tab}) a {
-    color: #bb9878;
+    color: #64f4ac;
   }
 
   p {
-    text-transform: uppercase;
-    font-family: 'Anton', Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
-    color: #bb9878;
+    color: #64f4ac;
   }
 
   li {
@@ -84,19 +85,23 @@ export const Container = styled.div<ContainerProps>`
     align-items: center;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 850px) {
     width: 90vw;
+
+    p {
+      font-size: 26px;
+    }
 
     ul {
       z-index: 10;
       position: fixed;
-      top: 42px;
+      top: 40px;
       left: ${(props): string => (props.isOpen ? '50%' : '100%')};
       display: ${(props): string => (props.isOpen ? 'block' : 'none')};
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      background-color: #272727;
+      background-color: #25262a;
       width: 80vw;
       height: 100vh;
       transition: left 0.4s ease;

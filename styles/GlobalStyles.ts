@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   *:focus {
@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
 
   body, input, button {
     font-size: 14px;
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   button {
@@ -53,8 +53,8 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
 
   li {
     list-style-type: none;
-    text-transform: uppercase;
-    font-family: 'Anton', Helvetica, Arial;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', Arial;
     font-size: 30px;
   }
 
@@ -76,7 +76,7 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     props.theme === 'dark'
       ? css`
           body {
-            background-color: #444444;
+            background-color: #2d2e32;
             color: #fafafa;
           }
 
@@ -94,35 +94,31 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
 
           input,
           textarea {
-            border: 1px solid #5c5c5c;
-            background-color: #5c5c5c;
+            border: 1px solid #3e3f43;
+            background-color: #3e3f43;
             color: #fff;
           }
 
           #thumbnail {
-            background-color: #717171;
-          }
-
-          #next-videos {
-            background-color: #333;
+            background-color: #4a4b50;
           }
         `
       : css`
           body {
             background-color: #f0f0f0;
-            color: #272727;
+            color: #25262a;
           }
 
           svg {
-            color: #272727;
+            color: #25262a;
           }
 
           p {
-            color: #272727;
+            color: #25262a;
           }
 
           a {
-            color: #272727;
+            color: #25262a;
           }
 
           input,
@@ -134,10 +130,6 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
 
           #thumbnail {
             background-color: #c4c4c4;
-          }
-
-          #next-videos {
-            background-color: #4f4f4f;
           }
         `}
 `;

@@ -27,9 +27,9 @@ export const FlexboxLeft = styled.div`
   }
 
   p {
-    font-family: 'Anton', Helvetica, serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
-    text-transform: uppercase;
+    font-weight: 700;
   }
 
   iframe {
@@ -153,6 +153,10 @@ export const FlexboxRight = styled.div`
   margin-top: 140px;
   width: 100%;
 
+  #next-videos {
+    background-color: #46484d;
+  }
+
   @media (max-width: 1060px) {
     margin-top: 15px;
     margin-bottom: 30px;
@@ -178,7 +182,7 @@ export const FlexboxRight = styled.div`
 `;
 
 export const NextVideoTitle = styled.div`
-  background-color: #272727;
+  background-color: #25262a;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 10px 0 10px 10px;
@@ -245,7 +249,7 @@ export const Video = styled.div`
   small {
     color: #fff;
     display: none;
-    font-family: 'Roboto', Helvetica, Arial;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
   }
 
@@ -281,7 +285,7 @@ export const Video = styled.div`
 `;
 
 export const UpperTitle = styled.div`
-  height: 28px;
+  height: 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;

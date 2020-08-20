@@ -9,10 +9,10 @@ export const Container = styled.div`
   animation-duration: 500ms;
 
   p {
+    font-weight: 700;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-family: 'Anton', Helvetica;
-    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
   }
 

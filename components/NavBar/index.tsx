@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Link from 'next/link';
-import { FiSun } from 'react-icons/fi';
+import { FaSun } from 'react-icons/fa';
 import { FaMoon } from 'react-icons/fa';
 
 import { useTheme } from '../../context/theme';
@@ -40,7 +40,9 @@ const NavBar: React.FC = () => {
       <Container tab={tab} isOpen={open}>
         <Link href="/">
           <a onClick={(): void => handleOpen(true)}>
-            <p>berg</p>
+            <p>
+              <strong>Daniel</strong> Bergholz
+            </p>
           </a>
         </Link>
         <MenuIcon onClick={(): void => handleOpen()} isOpen={open} tab={tab}>
@@ -50,9 +52,9 @@ const NavBar: React.FC = () => {
         </MenuIcon>
         <ul>
           {theme === 'dark' ? (
-            <FiSun size={28} color="#D4AE8B" onClick={changeTheme} />
+            <FaSun size={28} color="#F1FA8C" onClick={changeTheme} />
           ) : (
-            <FaMoon size={22} color="#D4AE8B" onClick={changeTheme} />
+            <FaMoon size={22} color="#F1FA8C" onClick={changeTheme} />
           )}
           <li>
             <Link href="/cursos">

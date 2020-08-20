@@ -49,7 +49,7 @@ export default class MyDocument extends Document {
           <meta property="og:image" content="/logo.ico" />
           <meta property="og:type" content="website" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
             rel="stylesheet"
           />
         </Head>

@@ -39,7 +39,6 @@ export const Contact = styled.div`
   img {
     margin-right: 40px;
     border-radius: 50%;
-    border: 6px solid #bb9878;
   }
 
   @media (max-width: 700px) {
@@ -93,13 +92,13 @@ export const Form = styled.form<FormProps>`
 
   button {
     margin: 15px 0;
-    font-family: 'Anton', Helvetica, Arial;
-    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     border: 0;
     border-radius: 6px;
     color: #fff;
-    background-color: #bb9878;
+    background-color: #6473f5;
+    font-weight: 700;
     padding: 6px 14px;
     transition: background-color 200ms;
     ${(props): FlattenSimpleInterpolation =>
@@ -115,7 +114,7 @@ export const Form = styled.form<FormProps>`
   }
 
   button:hover {
-    background-color: #d4ae8b;
+    background-color: #8692ff;
   }
 
   @media (max-width: 950px) {

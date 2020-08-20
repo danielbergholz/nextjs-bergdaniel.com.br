@@ -14,7 +14,7 @@ import {
   FlexboxRight,
   NextVideos,
   NextVideoTitle,
-} from '../../styles/cursos/nome_do_curso/styles';
+} from '../../styles/cursos/slug/styles';
 import api from '../../services/api';
 
 interface PlaylistItem {
@@ -88,12 +88,10 @@ export default function VideoPlayer({
   const changeVideo = useCallback(
     (id: number) => {
       setSelectedVideo(data[id]);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem(
-          `@bergdaniel:${courseInfo.playlistId}`,
-          JSON.stringify(data[id])
-        );
-      }
+      localStorage.setItem(
+        `@bergdaniel:${courseInfo.playlistId}`,
+        JSON.stringify(data[id])
+      );
     },
     [data, courseInfo.playlistId]
   );
@@ -124,7 +122,7 @@ export default function VideoPlayer({
               >
                 <Download>
                   <span>Download</span>
-                  <IoMdDownload color="#D4AE8B" size={20} />
+                  <IoMdDownload color="#F1FA8C" size={20} />
                 </Download>
               </a>
             )}

@@ -5,15 +5,15 @@ export const StyledButton = styled.button`
   align-items: center;
   padding: 10px;
   border-radius: 6px;
-  background-color: #bb9878;
+  background-color: #6473f5;
   color: #fff;
-  font-family: 'Anton', Helvetica, sans-serif;
-  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
   font-size: 21px;
   transition: background-color 200ms;
 
   &:hover {
-    background-color: #d4ae8b;
+    background-color: #8692ff;
   }
 
   svg {

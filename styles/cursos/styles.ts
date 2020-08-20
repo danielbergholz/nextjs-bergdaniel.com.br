@@ -13,9 +13,9 @@ export const Container = styled.div`
   }
 
   p {
-    font-family: 'Anton', Helvetica, serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
-    text-transform: uppercase;
+    font-weight: bold;
   }
 
   @media (max-width: 900px) {
@@ -42,9 +42,9 @@ export const Thumbnail = styled.div`
     width: 320px;
     height: 180px;
     border-radius: 5px;
-    font-family: 'Anton', Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
-    text-transform: uppercase;
+    font-weight: bold;
   }
 
   > p {
@@ -80,7 +80,6 @@ export const Course = styled.div`
 export const Gold = styled.span`
   display: inline;
   color: #ebce00;
-  font-family: 'Anton', Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 32px;
-  text-transform: uppercase;
 `;

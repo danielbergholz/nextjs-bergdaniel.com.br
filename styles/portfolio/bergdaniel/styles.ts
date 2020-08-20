@@ -9,11 +9,11 @@ export const Container = styled.div`
   flex-direction: column;
 
   p {
-    text-transform: uppercase;
+    font-weight: 700;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 30px;
-    font-family: 'Anton', Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
   }
 
@@ -22,9 +22,8 @@ export const Container = styled.div`
     height: 157px;
     margin: 0 auto;
     border-radius: 5px;
-    font-family: 'Anton', Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
-    text-transform: uppercase;
     margin-bottom: 20px;
   }
 
