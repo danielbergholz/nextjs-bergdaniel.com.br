@@ -246,11 +246,15 @@ export const Video = styled.div`
     width: 160px;
   }
 
+  span {
+    font-size: 16px;
+  }
+
   small {
     color: #fff;
     display: none;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   @media (max-width: 1060px) {
