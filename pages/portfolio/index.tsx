@@ -103,10 +103,11 @@ const Portfolio: React.FC = () => {
                 Native e NodeJS com Typescript.
               </span>
             </strong>
-
-            <Button link="http://app.rocketseat.com.br/api/certificates/pdf/6b76d8c5-fe76-4322-9c0d-bbf6d11662ed">
-              ver mais
-            </Button>
+            <Link href="/portfolio/rocketseat">
+              <a>
+                <Button>ver mais</Button>
+              </a>
+            </Link>
           </Text>
         </Project>
 
