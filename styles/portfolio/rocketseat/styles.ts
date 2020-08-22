@@ -13,4 +13,8 @@ export const Container = styled.div`
     max-width: 100%;
     max-height: 600px;
   }
+
+  button {
+    margin: 30px auto 30px auto;
+  }
 `;
