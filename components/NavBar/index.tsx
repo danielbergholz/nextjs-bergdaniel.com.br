@@ -1,5 +1,6 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { FaSun } from 'react-icons/fa';
 import { FaMoon } from 'react-icons/fa';
 
@@ -10,6 +11,7 @@ const NavBar: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [tab, setTab] = useState<number>(0);
 
+  const { pathname } = useRouter();
   const { changeTheme, theme, lock } = useTheme();
 
   const handleOpen = useCallback(
@@ -35,11 +37,23 @@ const NavBar: React.FC = () => {
     [lock]
   );
 
+  useEffect(() => {
+    if (pathname === '/contato') {
+      handleNewTab(4);
+    } else if (pathname === '/portfolio') {
+      handleNewTab(3);
+    } else if (pathname === '/cursos') {
+      handleNewTab(2);
+    } else {
+      handleOpen(true);
+    }
+  }, [pathname]);
+
   return (
     <Background>
       <Container tab={tab} isOpen={open}>
         <Link href="/">
-          <a onClick={(): void => handleOpen(true)}>
+          <a>
             <p>
               <strong>Daniel</strong> Bergholz
             </p>
@@ -58,17 +72,17 @@ const NavBar: React.FC = () => {
           )}
           <li>
             <Link href="/cursos">
-              <a onClick={(): void => handleNewTab(2)}>cursos</a>
+              <a>cursos</a>
             </Link>
           </li>
           <li>
             <Link href="/portfolio">
-              <a onClick={(): void => handleNewTab(3)}>portfolio</a>
+              <a>portfolio</a>
             </Link>
           </li>
           <li>
             <Link href="/contato">
-              <a onClick={(): void => handleNewTab(4)}>contato</a>
+              <a>contato</a>
             </Link>
           </li>
         </ul>
