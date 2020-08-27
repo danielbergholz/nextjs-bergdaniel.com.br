@@ -12,7 +12,7 @@ const AstroMuri: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Astro Muri | Daniel Berg</title>
+        <title>Astro Muri | Portfolio | Daniel Berg</title>
         <meta
           name="og:title"
           property="og:title"
@@ -24,7 +24,7 @@ const AstroMuri: React.FC = () => {
         />
       </Head>
       <Container>
-        <p>Astro Muri</p>
+        <h1>Astro Muri</h1>
         <img src="/assets/astro_muri.png" alt="Aplicativo Astro Muri" />
         <strong>
           - Projeto:

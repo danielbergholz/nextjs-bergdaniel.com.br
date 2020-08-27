@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.main`
   width: 80vw;
   margin: 0 auto;
   animation: loadAnimation;
   animation-duration: 500ms;
   padding-bottom: 40px;
 
-  > p {
+  h1 {
     margin-top: 40px;
     margin-bottom: 25px;
   }
 
+  h1,
   p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
@@ -19,7 +20,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 900px) {
-    p {
+    h1 {
       text-align: center;
     }
   }

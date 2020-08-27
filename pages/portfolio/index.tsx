@@ -17,7 +17,7 @@ const Portfolio: React.FC = () => {
         />
       </Head>
       <Container>
-        <p>Experiência</p>
+        <h1>Experiência</h1>
         <strong>
           - Graduação:
           <span> Graduando em Engenharia de Redes de Comunicações na UnB</span>
@@ -41,7 +41,7 @@ const Portfolio: React.FC = () => {
           </span>
         </strong>
 
-        <p>Projetos</p>
+        <h1>Projetos</h1>
 
         <Project>
           <img src="/assets/bossabox.jpeg" alt="Logo BossaBox" />

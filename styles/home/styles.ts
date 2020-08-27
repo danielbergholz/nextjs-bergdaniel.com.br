@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.main`
   padding-top: 200px;
   width: 80vw;
   margin: 0 auto;
@@ -13,7 +13,7 @@ export const Container = styled.div`
   }
 `;
 
-export const RightText = styled.div`
+export const RightText = styled.section`
   margin-left: 60px;
   max-width: 800px;
 
@@ -28,12 +28,12 @@ export const RightText = styled.div`
     margin-bottom: 40px;
   }
 
-  p {
+  h2 {
     font-size: 35px;
     font-weight: 700;
   }
 
-  span {
+  p {
     margin-top: 5px;
     display: block;
     font-size: 22px;
@@ -49,17 +49,17 @@ export const RightText = styled.div`
       margin-bottom: 20px;
     }
 
-    p {
+    h2 {
       font-size: 24px;
     }
 
-    span {
+    p {
       font-size: 19px;
     }
   }
 `;
 
-export const Left = styled.div`
+export const Left = styled.figure`
   @media (max-width: 750px) {
     margin-bottom: 40px;
   }

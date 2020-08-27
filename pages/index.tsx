@@ -18,7 +18,7 @@ const Home: React.FC = () => {
         <meta name="og:title" property="og:title" content="Daniel Bergholz" />
         <meta
           name="description"
-          content="Meu nome é Daniel Bergholz, sou Desenvolvedor Fullstack Javascript"
+          content="Daniel Bergholz, Desenvolvedor Web Fullstack com foco em tecnologias Javascript, e graduando em Engenharia de Redes na UnB"
         />
       </Head>
       <Container>
@@ -54,13 +54,13 @@ const Home: React.FC = () => {
           </Left>
           <RightText>
             <h1>Fullstack Developer</h1>
-            <p>
+            <h2>
               Trabalho no desenvolvimento de aplicações web performáticas e com
               foco na experiência de usuário
-            </p>
-            <span>
+            </h2>
+            <p>
               Tecnologias que já utilizei: Node, Adonis, React, Gatsby e Next
-            </span>
+            </p>
           </RightText>
         </Hello>
       </Container>

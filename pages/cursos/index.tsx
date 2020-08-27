@@ -56,11 +56,11 @@ export default function Cursos({
         />
         <meta
           name="description"
-          content="Cursos gratuitos de Desenvolvimento Web, Trello e Linux"
+          content="Cursos gratuitos de Trello, Linux e Desenvolvimento Web focado em tecnologias javascript"
         />
       </Head>
       <Container>
-        <p>Cursos gratuitos</p>
+        <h1>Cursos gratuitos</h1>
         <CourseList>
           {CoursesPlaylists.map((playlist: PlaylistItem) => (
             <Course key={playlist.id}>
@@ -86,10 +86,10 @@ export default function Cursos({
           </Course>
         </CourseList>
 
-        <p>
+        <h1>
           Cursos
           <Gold> premium</Gold>
-        </p>
+        </h1>
         <CourseList>
           <Course>
             <Thumbnail id="thumbnail">
@@ -105,7 +105,7 @@ export default function Cursos({
           </Course>
         </CourseList>
 
-        <p>Outros</p>
+        <h1>Outros conteúdos</h1>
         <CourseList>
           {OtherPlaylists.map((playlist: PlaylistItem) => (
             <Course key={playlist.id}>

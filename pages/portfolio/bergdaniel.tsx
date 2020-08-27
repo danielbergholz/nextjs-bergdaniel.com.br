@@ -12,7 +12,7 @@ const BergDaniel: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Site Pessoal | Daniel Berg</title>
+        <title>Site Pessoal | Portfolio | Daniel Berg</title>
         <meta name="og:title" property="og:title" content="Site Pessoal" />
         <meta
           name="description"
@@ -20,7 +20,7 @@ const BergDaniel: React.FC = () => {
         />
       </Head>
       <Container>
-        <p>Berg Daniel</p>
+        <h1>Berg Daniel</h1>
         <img src="/assets/berg.png" alt="berg daniel" />
         <strong>
           - Projeto:

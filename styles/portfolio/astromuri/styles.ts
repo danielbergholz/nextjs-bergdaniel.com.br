@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.main`
   width: 80vw;
   margin: 0 auto;
   animation: loadAnimation;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  p {
+  h1 {
     font-weight: 700;
     text-align: center;
     margin-top: 40px;
@@ -42,7 +42,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 700px) {
-    p {
+    h1 {
       text-align: center;
       font-size: 30px;
     }

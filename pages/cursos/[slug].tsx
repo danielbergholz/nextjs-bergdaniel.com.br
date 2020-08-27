@@ -81,7 +81,6 @@ interface PropTypes {
 export default function VideoPlayer({
   data,
   courseInfo,
-  slug,
 }: PropTypes): JSX.Element {
   const [selectedVideo, setSelectedVideo] = useState<Video>(data[0]);
 
@@ -99,7 +98,7 @@ export default function VideoPlayer({
   return (
     <>
       <Head>
-        <title>{slug} | Daniel Berg</title>
+        <title>{courseInfo.courseName} | Daniel Berg</title>
         <meta
           name="og:title"
           property="og:title"
@@ -109,11 +108,11 @@ export default function VideoPlayer({
       </Head>
       <Container>
         <FlexboxLeft>
-          <p>{courseInfo.courseName}</p>
+          <h1>{courseInfo.courseName}</h1>
           <UpperTitle>
-            <strong>
+            <h2>
               {selectedVideo.snippet.mediumTitle || selectedVideo.snippet.title}
-            </strong>
+            </h2>
             {courseInfo.slidesLink !== '' && (
               <a
                 href={courseInfo.slidesLink}
@@ -158,8 +157,8 @@ export default function VideoPlayer({
                       src={thumbnails.medium.url}
                       alt={video.snippet.title}
                     />
-                    <span>{shortTitle}</span>
-                    <small>{mediumTitle}</small>
+                    <h3>{shortTitle}</h3>
+                    <h4>{mediumTitle}</h4>
                   </Video>
                 );
               })}

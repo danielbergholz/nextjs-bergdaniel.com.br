@@ -5,7 +5,7 @@ interface ContainerProps {
   isOpen: boolean;
 }
 
-export const Background = styled.div`
+export const Background = styled.header`
   position: relative;
   background-color: #25262a;
   color: #fff;

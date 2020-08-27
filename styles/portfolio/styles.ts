@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.main`
   width: 80vw;
   margin: 0 auto;
   display: flex;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   animation: loadAnimation;
   animation-duration: 500ms;
 
-  p {
+  h1 {
     font-weight: 700;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -26,7 +26,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 700px) {
-    p {
+    h1 {
       text-align: center;
       font-size: 30px;
     }
@@ -38,7 +38,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Project = styled.div`
+export const Project = styled.section`
   display: flex;
   margin-bottom: 20px;
   align-items: center;
@@ -51,6 +51,7 @@ export const Project = styled.div`
 
   img {
     width: 165px;
+    height: 165px;
     border-radius: 6px;
     display: inline;
     margin-right: 15px;
@@ -70,7 +71,7 @@ export const Project = styled.div`
   }
 `;
 
-export const Text = styled.div`
+export const Text = styled.aside`
   @media (max-width: 700px) {
     margin: 10px 0 10px 0;
   }

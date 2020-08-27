@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.main`
   width: 80vw;
   margin: 0 auto;
   animation: loadAnimation;
@@ -18,15 +18,15 @@ export const Container = styled.div`
   }
 `;
 
-export const FlexboxLeft = styled.div`
+export const FlexboxLeft = styled.section`
   width: 1280px;
 
-  > p {
+  > h1 {
     margin-top: 40px;
     margin-bottom: 25px;
   }
 
-  p {
+  h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
     font-weight: 700;
@@ -136,19 +136,19 @@ export const FlexboxLeft = styled.div`
       height: 180px;
     }
 
-    > p {
+    h1 {
       margin-top: 20px;
       margin-bottom: 25px;
     }
 
-    p {
+    h1 {
       font-size: 28px;
       text-align: center;
     }
   }
 `;
 
-export const FlexboxRight = styled.div`
+export const FlexboxRight = styled.aside`
   margin-left: 15px;
   margin-top: 140px;
   width: 100%;
@@ -205,12 +205,6 @@ export const NextVideos = styled.div`
   height: 679px;
   text-align: center;
 
-  span {
-    margin-bottom: 5px;
-    color: #fff;
-    display: block;
-  }
-
   @media (max-width: 1880px) {
     height: 607px;
   }
@@ -238,19 +232,26 @@ export const NextVideos = styled.div`
 
 export const Video = styled.div`
   cursor: pointer;
+  padding-right: 10px;
+  padding-left: 10px;
 
   img {
     border-radius: 5px;
-    margin-top: 5px;
+    margin-top: 8px;
     height: 90px;
     width: 160px;
   }
 
-  span {
+  h3 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #fff;
+    display: block;
     font-size: 16px;
   }
 
-  small {
+  h4 {
+    font-weight: 500;
     color: #fff;
     display: none;
     font-family: 'Source Sans Pro', sans-serif;
@@ -266,11 +267,11 @@ export const Video = styled.div`
       margin: 10px 10px 0 10px;
     }
 
-    span {
+    h3 {
       display: none;
     }
 
-    small {
+    h4 {
       text-align: left;
       display: block;
     }
@@ -278,11 +279,11 @@ export const Video = styled.div`
 
   @media (max-width: 440px) {
     display: block;
-    small {
+    h4 {
       display: none;
     }
 
-    span {
+    h3 {
       display: block;
     }
   }
@@ -295,12 +296,12 @@ export const UpperTitle = styled.div`
   align-items: center;
   width: inherit;
 
-  strong {
+  h2 {
     font-size: 20px;
   }
 
   @media (max-width: 1395px) {
-    strong {
+    h2 {
       font-size: 18px;
     }
   }
@@ -311,7 +312,7 @@ export const UpperTitle = styled.div`
   }
 
   @media (max-width: 440px) {
-    strong {
+    h2 {
       font-size: 16px;
     }
   }

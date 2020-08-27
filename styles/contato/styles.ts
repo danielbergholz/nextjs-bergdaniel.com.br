@@ -4,7 +4,7 @@ interface FormProps {
   loading: number;
 }
 
-export const Container = styled.div`
+export const Container = styled.main`
   width: 80vw;
   margin: 0 auto;
   display: flex;
@@ -19,7 +19,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Contact = styled.div`
+export const Contact = styled.section`
   display: flex;
   place-content: center;
   margin-top: 40px;
@@ -48,7 +48,7 @@ export const Contact = styled.div`
   }
 `;
 
-export const SocialMedia = styled.div`
+export const SocialMedia = styled.aside`
   display: flex;
   flex-direction: column;
   place-content: center;
