@@ -67,6 +67,7 @@ export const Project = styled.section`
     img {
       margin: 0 auto;
       width: 125px;
+      height: 125px;
     }
   }
 `;
