@@ -51,7 +51,7 @@ export const Project = styled.section`
 
   img {
     width: 165px;
-    height: 165px;
+    height: 157px;
     border-radius: 6px;
     display: inline;
     margin-right: 15px;
@@ -67,7 +67,7 @@ export const Project = styled.section`
     img {
       margin: 0 auto;
       width: 125px;
-      height: 125px;
+      height: 119px;
     }
   }
 `;
