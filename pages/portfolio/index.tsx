@@ -40,6 +40,14 @@ const Portfolio: React.FC = () => {
             Atuo como desenvolvedor fullstack freelancer desde junho de 2020
           </span>
         </strong>
+        <strong>
+          - Emprego atual:
+          <span>
+            {' '}
+            Trabalho como desenvolvedor Frontend (ReactJS + Typescript) na
+            Talent Four Consulting
+          </span>
+        </strong>
 
         <h1>Projetos</h1>
 
