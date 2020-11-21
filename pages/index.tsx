@@ -1,4 +1,3 @@
-import React from 'react';
 import Head from 'next/head';
 import { FaGithub, FaInstagram, FaYoutube } from 'react-icons/fa';
 
@@ -10,7 +9,7 @@ import {
   RightText,
 } from '../styles/home/styles';
 
-const Home: React.FC = () => {
+export default function Home(): JSX.Element {
   return (
     <>
       <Head>
@@ -66,6 +65,4 @@ const Home: React.FC = () => {
       </Container>
     </>
   );
-};
-
-export default Home;
+}

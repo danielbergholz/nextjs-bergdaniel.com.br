@@ -1,4 +1,3 @@
-import React from 'react';
 import Head from 'next/head';
 import { FaAndroid } from 'react-icons/fa';
 
@@ -8,7 +7,7 @@ import {
 } from '../../styles/portfolio/astromuri/styles';
 import Button from '../../components/Button';
 
-const AstroMuri: React.FC = () => {
+export default function AstroMuri(): JSX.Element {
   return (
     <>
       <Head>
@@ -85,6 +84,4 @@ const AstroMuri: React.FC = () => {
       </Container>
     </>
   );
-};
-
-export default AstroMuri;
+}
