@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Head from 'next/head';
 import { FaGithub, FaYoutube, FaDiscord, FaLinkedin } from 'react-icons/fa';
 import { BsFillLightningFill } from 'react-icons/bs';
@@ -30,12 +31,14 @@ const Home: React.FC = () => {
             </Button>
           </a>
 
-          <a href="https://bergdaniel.com.br/cursos">
-            <Button color="#5BC992">
-              <BsFillLightningFill size={30} color="#fff" />
-              <h1>Cursos</h1>
-            </Button>
-          </a>
+          <Link href="/cursos">
+            <a>
+              <Button color="#5BC992">
+                <BsFillLightningFill size={30} color="#fff" />
+                <h1>Cursos</h1>
+              </Button>
+            </a>
+          </Link>
 
           <a
             href="https://discord.gg/PkWraebbfY"
