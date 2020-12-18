@@ -52,50 +52,6 @@ const Portfolio: React.FC = () => {
         <h1>Projetos</h1>
 
         <Project>
-          <img src="/assets/bossabox.jpeg" alt="Logo BossaBox" />
-          <Text>
-            <strong>
-              - Função:
-              <span> Desenvolvedor Fullstack</span>
-            </strong>
-            <br />
-            <strong>
-              - Descrição:
-              <span>
-                {' '}
-                Estou disponível como freelancer na plataforma Bossabox.
-              </span>
-            </strong>
-
-            <Button link="https://app.bossabox.com/u/daniel-bergholz">
-              ver mais
-            </Button>
-          </Text>
-        </Project>
-
-        <Project>
-          <img src="/assets/upwork.png" alt="Logo Upwork" />
-          <Text>
-            <strong>
-              - Função:
-              <span> Desenvolvedor Fullstack</span>
-            </strong>
-            <br />
-            <strong>
-              - Descrição:
-              <span>
-                {' '}
-                Estou disponível como freelancer na plataforma Upwork.
-              </span>
-            </strong>
-
-            <Button link="https://www.upwork.com/o/profiles/users/~01d7d71fa714d6ce9d/">
-              ver mais
-            </Button>
-          </Text>
-        </Project>
-
-        <Project>
           <img src="/assets/rocketseat.png" alt="Logo Rocketseat" />
           <Text>
             <strong>
@@ -112,6 +68,58 @@ const Portfolio: React.FC = () => {
               </span>
             </strong>
             <Link href="/portfolio/rocketseat">
+              <a>
+                <Button>ver mais</Button>
+              </a>
+            </Link>
+          </Text>
+        </Project>
+
+        <Project>
+          <img src="/assets/bossabox.jpeg" alt="Logo BossaBox" />
+          <Text>
+            <strong>
+              - Função:
+              <span> Desenvolvedor Fullstack</span>
+            </strong>
+            <br />
+            <strong>
+              - Descrição:
+              <span>
+                {' '}
+                VUTTR foi o desafio fullstack que desenvolvi para passar na
+                plataforma de freelancing chamada Bossabox. O frontend foi feito
+                com React + Typescript e o backend com o Adonis V4.
+              </span>
+            </strong>
+
+            <Link href="/portfolio/bossabox">
+              <a>
+                <Button>ver mais</Button>
+              </a>
+            </Link>
+          </Text>
+        </Project>
+
+        <Project>
+          <img src="/assets/berg.png" alt="Logo berg" />
+          <Text>
+            <strong>
+              - Função:
+              <span> Desenvolvedor Frontend, Designer</span>
+            </strong>
+            <br />
+            <strong>
+              - Descrição:
+              <span>
+                {' '}
+                bergdaniel.com.br é o site que você está acessando. Eu o criei
+                do completo zero, desde a concepção da arquitetura e navegação
+                de páginas no whimsical e o design no Figma até o
+                desenvolvimento com NextJS.
+              </span>
+            </strong>
+            <Link href="/portfolio/bergdaniel">
               <a>
                 <Button>ver mais</Button>
               </a>
@@ -147,43 +155,24 @@ const Portfolio: React.FC = () => {
         </Project>
 
         <Project>
-          <img src="/assets/berg.png" alt="Logo berg" />
+          <img src="/assets/upwork.png" alt="Logo Upwork" />
           <Text>
             <strong>
               - Função:
-              <span> Desenvolvedor Frontend, Designer</span>
+              <span> Desenvolvedor Fullstack</span>
             </strong>
             <br />
             <strong>
               - Descrição:
               <span>
                 {' '}
-                bergdaniel.com.br é o site que você está acessando. Eu o criei
-                do completo zero, desde a concepção da arquitetura e navegação
-                de páginas no whimsical e o design no Figma até o
-                desenvolvimento com NextJS.
+                Estou disponível como freelancer na plataforma Upwork.
               </span>
             </strong>
-            <Link href="/portfolio/bergdaniel">
-              <a>
-                <Button>ver mais</Button>
-              </a>
-            </Link>
-          </Text>
-        </Project>
 
-        <Project>
-          <img src="/assets/logo_bg_roxo.png" alt="Logo berg" />
-          <Text>
-            <strong>
-              - Função:
-              <span> Fundador, Desenvolvedor Fullstack</span>
-            </strong>
-            <br />
-            <strong>
-              - Descrição:
-              <span> Mais detalhes em breve</span>
-            </strong>
+            <Button link="https://www.upwork.com/o/profiles/users/~01d7d71fa714d6ce9d/">
+              ver mais
+            </Button>
           </Text>
         </Project>
       </Container>
