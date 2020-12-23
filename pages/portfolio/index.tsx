@@ -28,10 +28,7 @@ const Portfolio: React.FC = () => {
         </strong>
         <strong>
           - Estágio:
-          <span>
-            {' '}
-            6 meses de experiência em desenvolvimento mobile com React Native
-          </span>
+          <span> Experiência em desenvolvimento mobile com React Native</span>
         </strong>
         <strong>
           - Freelancer:
@@ -52,7 +49,7 @@ const Portfolio: React.FC = () => {
         <h1>Projetos</h1>
 
         <Project>
-          <img src="/assets/rocketseat.png" alt="Logo Rocketseat" />
+          <img src="/assets/teach-other.jpg" alt="Logo Teach Other" />
           <Text>
             <strong>
               - Função:
@@ -63,11 +60,13 @@ const Portfolio: React.FC = () => {
               - Descrição:
               <span>
                 {' '}
-                Bootcamp GoStack. Abordou os seguintes temas: ReactJS, React
-                Native e NodeJS com Typescript.
+                Teach Other é uma plataforma de agendamento de aula particular
+                para universitários (feita com NextJS + MongoDB), desenvolvida
+                para a disciplina &quot;Projeto Transversal 1&quot; da
+                Universidade de Brasília (UnB).
               </span>
             </strong>
-            <Link href="/portfolio/rocketseat">
+            <Link href="/portfolio/teach-other">
               <a>
                 <Button>ver mais</Button>
               </a>
@@ -147,6 +146,30 @@ const Portfolio: React.FC = () => {
               </span>
             </strong>
             <Link href="/portfolio/astromuri">
+              <a>
+                <Button>ver mais</Button>
+              </a>
+            </Link>
+          </Text>
+        </Project>
+
+        <Project>
+          <img src="/assets/rocketseat.png" alt="Logo Rocketseat" />
+          <Text>
+            <strong>
+              - Função:
+              <span> Desenvolvedor Fullstack</span>
+            </strong>
+            <br />
+            <strong>
+              - Descrição:
+              <span>
+                {' '}
+                Bootcamp GoStack. Abordou os seguintes temas: ReactJS, React
+                Native e NodeJS com Typescript.
+              </span>
+            </strong>
+            <Link href="/portfolio/rocketseat">
               <a>
                 <Button>ver mais</Button>
               </a>
