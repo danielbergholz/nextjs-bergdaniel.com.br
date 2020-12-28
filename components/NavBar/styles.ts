@@ -51,7 +51,7 @@ export const MenuIcon = styled.a<ContainerProps>`
       props.isOpen ? 'rotate(-45deg) translate3d(9px, -8px, 0)' : ''};
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 950px) {
     display: block;
   }
 `;
@@ -85,7 +85,7 @@ export const Container = styled.div<ContainerProps>`
     align-items: center;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 950px) {
     width: 90vw;
 
     p {

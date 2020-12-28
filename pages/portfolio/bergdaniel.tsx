@@ -1,4 +1,3 @@
-import React from 'react';
 import Head from 'next/head';
 import { FaGithub, FaYoutube } from 'react-icons/fa';
 
@@ -8,7 +7,7 @@ import {
 } from '../../styles/portfolio/bergdaniel/styles';
 import Button from '../../components/Button';
 
-const BergDaniel: React.FC = () => {
+export default function BergDaniel(): JSX.Element {
   return (
     <>
       <Head>
@@ -78,6 +77,4 @@ const BergDaniel: React.FC = () => {
       </Container>
     </>
   );
-};
-
-export default BergDaniel;
+}

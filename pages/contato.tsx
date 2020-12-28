@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import Head from 'next/head';
 import { ToastContainer, toast } from 'react-toastify';
 import { FaGithub, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
@@ -12,7 +12,7 @@ import {
   Form,
 } from '../styles/contato/styles';
 
-const Contato: React.FC = () => {
+export default function Contato(): JSX.Element {
   const [loading, setLoading] = useState(0);
 
   const onHandleSubmit = useCallback((event) => {
@@ -199,6 +199,4 @@ const Contato: React.FC = () => {
       </Container>
     </>
   );
-};
-
-export default Contato;
+}

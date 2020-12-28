@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { IoMdDownload } from 'react-icons/io';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 

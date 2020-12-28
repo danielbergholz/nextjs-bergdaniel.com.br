@@ -39,8 +39,10 @@ const NavBar: React.FC = () => {
 
   useEffect(() => {
     if (pathname === '/contato') {
-      handleNewTab(4);
+      handleNewTab(5);
     } else if (pathname === '/portfolio') {
+      handleNewTab(4);
+    } else if (pathname === '/blog') {
       handleNewTab(3);
     } else if (pathname === '/cursos') {
       handleNewTab(2);
@@ -73,6 +75,11 @@ const NavBar: React.FC = () => {
           <li>
             <Link href="/cursos">
               <a>cursos</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog">
+              <a>blog</a>
             </Link>
           </li>
           <li>

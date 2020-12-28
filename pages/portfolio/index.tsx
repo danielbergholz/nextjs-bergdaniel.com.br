@@ -1,11 +1,10 @@
-import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 
 import { Container, Project, Text } from '../../styles/portfolio/styles';
 import Button from '../../components/Button';
 
-const Portfolio: React.FC = () => {
+export default function Portfolio(): JSX.Element {
   return (
     <>
       <Head>
@@ -201,6 +200,4 @@ const Portfolio: React.FC = () => {
       </Container>
     </>
   );
-};
-
-export default Portfolio;
+}
