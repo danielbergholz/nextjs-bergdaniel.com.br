@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import { FaGithub, FaYoutube, FaDiscord, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaDiscord } from 'react-icons/fa';
+import { BiBook } from 'react-icons/bi';
 import { BsFillLightningFill } from 'react-icons/bs';
 
 import { Container, Button, ButtonsContainer } from '../styles/links/styles';
@@ -31,15 +32,6 @@ const Home: React.FC = () => {
             </Button>
           </a>
 
-          <Link href="/cursos">
-            <a>
-              <Button color="#5BC992">
-                <BsFillLightningFill size={30} color="#fff" />
-                <h1>Cursos</h1>
-              </Button>
-            </a>
-          </Link>
-
           <a
             href="https://discord.gg/PkWraebbfY"
             target="_blank"
@@ -51,6 +43,24 @@ const Home: React.FC = () => {
             </Button>
           </a>
 
+          <Link href="/cursos">
+            <a>
+              <Button color="#59C28E">
+                <BsFillLightningFill size={30} color="#fff" />
+                <h1>Cursos</h1>
+              </Button>
+            </a>
+          </Link>
+
+          <Link href="/blog">
+            <a>
+              <Button color="#2B83D0">
+                <BiBook size={30} color="#fff" />
+                <h1>Blog</h1>
+              </Button>
+            </a>
+          </Link>
+
           <a
             href="https://www.github.com/danielbergholz"
             target="_blank"
@@ -59,17 +69,6 @@ const Home: React.FC = () => {
             <Button>
               <FaGithub size={30} color="#fff" />
               <h1>GitHub</h1>
-            </Button>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/daniel-gobbi-bergholz-752379149"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button color="#1060A6">
-              <FaLinkedin size={30} color="#fff" />
-              <h1>LinkeIn</h1>
             </Button>
           </a>
         </ButtonsContainer>
