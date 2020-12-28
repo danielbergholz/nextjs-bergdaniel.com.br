@@ -77,13 +77,6 @@ export default function Cursos({
               <span>{playlist.snippet.title}</span>
             </Course>
           ))}
-
-          <Course>
-            <Thumbnail id="thumbnail">
-              <p> em breve</p>
-            </Thumbnail>
-            <span> Curso de CSS</span>
-          </Course>
         </CourseList>
 
         <h1>
@@ -93,15 +86,16 @@ export default function Cursos({
         <CourseList>
           <Course>
             <Thumbnail id="thumbnail">
-              <p> em breve</p>
+              <p>em breve</p>
             </Thumbnail>
-            <span> Curso de React</span>
+            <span>O guia do Dev Frontend</span>
           </Course>
+
           <Course>
             <Thumbnail id="thumbnail">
-              <p> em breve</p>
+              <p>em breve</p>
             </Thumbnail>
-            <span> Curso de Node</span>
+            <span>Curso de React</span>
           </Course>
         </CourseList>
 

@@ -27,10 +27,7 @@ export default function Portfolio(): JSX.Element {
         </strong>
         <strong>
           - Estágio:
-          <span>
-            {' '}
-            6 meses de experiência em desenvolvimento mobile com React Native
-          </span>
+          <span> Experiência em desenvolvimento mobile com React Native</span>
         </strong>
         <strong>
           - Freelancer:
@@ -51,6 +48,32 @@ export default function Portfolio(): JSX.Element {
         <h1>Projetos</h1>
 
         <Project>
+          <img src="/assets/teach-other.jpg" alt="Logo Teach Other" />
+          <Text>
+            <strong>
+              - Função:
+              <span> Desenvolvedor Fullstack</span>
+            </strong>
+            <br />
+            <strong>
+              - Descrição:
+              <span>
+                {' '}
+                Teach Other é uma plataforma de agendamento de aula particular
+                para universitários (feita com NextJS + MongoDB), desenvolvida
+                para a disciplina &quot;Projeto Transversal 1&quot; da
+                Universidade de Brasília (UnB).
+              </span>
+            </strong>
+            <Link href="/portfolio/teach-other">
+              <a>
+                <Button>ver mais</Button>
+              </a>
+            </Link>
+          </Text>
+        </Project>
+
+        <Project>
           <img src="/assets/bossabox.jpeg" alt="Logo BossaBox" />
           <Text>
             <strong>
@@ -62,55 +85,39 @@ export default function Portfolio(): JSX.Element {
               - Descrição:
               <span>
                 {' '}
-                Estou disponível como freelancer na plataforma Bossabox.
+                VUTTR foi o desafio fullstack que desenvolvi para passar na
+                plataforma de freelancing chamada Bossabox. O frontend foi feito
+                com React + Typescript e o backend com o Adonis V4.
               </span>
             </strong>
 
-            <Button link="https://app.bossabox.com/u/daniel-bergholz">
-              ver mais
-            </Button>
+            <Link href="/portfolio/bossabox">
+              <a>
+                <Button>ver mais</Button>
+              </a>
+            </Link>
           </Text>
         </Project>
 
         <Project>
-          <img src="/assets/upwork.png" alt="Logo Upwork" />
+          <img src="/assets/berg.png" alt="Logo berg" />
           <Text>
             <strong>
               - Função:
-              <span> Desenvolvedor Fullstack</span>
+              <span> Desenvolvedor Frontend, Designer</span>
             </strong>
             <br />
             <strong>
               - Descrição:
               <span>
                 {' '}
-                Estou disponível como freelancer na plataforma Upwork.
+                bergdaniel.com.br é o site que você está acessando. Eu o criei
+                do completo zero, desde a concepção da arquitetura e navegação
+                de páginas no whimsical e o design no Figma até o
+                desenvolvimento com NextJS.
               </span>
             </strong>
-
-            <Button link="https://www.upwork.com/o/profiles/users/~01d7d71fa714d6ce9d/">
-              ver mais
-            </Button>
-          </Text>
-        </Project>
-
-        <Project>
-          <img src="/assets/rocketseat.png" alt="Logo Rocketseat" />
-          <Text>
-            <strong>
-              - Função:
-              <span> Desenvolvedor Fullstack</span>
-            </strong>
-            <br />
-            <strong>
-              - Descrição:
-              <span>
-                {' '}
-                Bootcamp GoStack. Abordou os seguintes temas: ReactJS, React
-                Native e NodeJS com Typescript.
-              </span>
-            </strong>
-            <Link href="/portfolio/rocketseat">
+            <Link href="/portfolio/bergdaniel">
               <a>
                 <Button>ver mais</Button>
               </a>
@@ -146,24 +153,22 @@ export default function Portfolio(): JSX.Element {
         </Project>
 
         <Project>
-          <img src="/assets/berg.png" alt="Logo berg" />
+          <img src="/assets/rocketseat.png" alt="Logo Rocketseat" />
           <Text>
             <strong>
               - Função:
-              <span> Desenvolvedor Frontend, Designer</span>
+              <span> Desenvolvedor Fullstack</span>
             </strong>
             <br />
             <strong>
               - Descrição:
               <span>
                 {' '}
-                bergdaniel.com.br é o site que você está acessando. Eu o criei
-                do completo zero, desde a concepção da arquitetura e navegação
-                de páginas no whimsical e o design no Figma até o
-                desenvolvimento com NextJS.
+                Bootcamp GoStack. Abordou os seguintes temas: ReactJS, React
+                Native e NodeJS com Typescript.
               </span>
             </strong>
-            <Link href="/portfolio/bergdaniel">
+            <Link href="/portfolio/rocketseat">
               <a>
                 <Button>ver mais</Button>
               </a>
@@ -172,17 +177,24 @@ export default function Portfolio(): JSX.Element {
         </Project>
 
         <Project>
-          <img src="/assets/logo_bg_roxo.png" alt="Logo berg" />
+          <img src="/assets/upwork.png" alt="Logo Upwork" />
           <Text>
             <strong>
               - Função:
-              <span> Fundador, Desenvolvedor Fullstack</span>
+              <span> Desenvolvedor Fullstack</span>
             </strong>
             <br />
             <strong>
               - Descrição:
-              <span> Mais detalhes em breve</span>
+              <span>
+                {' '}
+                Estou disponível como freelancer na plataforma Upwork.
+              </span>
             </strong>
+
+            <Button link="https://www.upwork.com/o/profiles/users/~01d7d71fa714d6ce9d/">
+              ver mais
+            </Button>
           </Text>
         </Project>
       </Container>
