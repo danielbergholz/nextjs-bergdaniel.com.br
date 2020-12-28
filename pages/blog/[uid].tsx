@@ -25,7 +25,11 @@ export default function BlogPost({ post }: PropTypes): JSX.Element {
     <>
       <Head>
         <title>{RichText.asText(post.data.title)} | Blog | Daniel Berg</title>
-        <meta name="og:title" property="og:title" content="Blog" />
+        <meta
+          name="og:title"
+          property="og:title"
+          content={RichText.asText(post.data.title)}
+        />
         <meta
           name="description"
           content={RichText.asText(post.data.description)}

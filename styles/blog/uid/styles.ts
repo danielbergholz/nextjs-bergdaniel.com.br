@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.main`
   width: 80vw;
-  margin: 40px auto 0 auto;
+  margin: 40px auto 40px auto;
   animation: loadAnimation;
   animation-duration: 500ms;
 
@@ -49,7 +49,7 @@ export const Container = styled.main`
   }
 
   @media (max-width: 950px) {
-    margin: 30px auto 0 auto;
+    margin: 30px auto 30px auto;
     width: 90vw;
 
     h1 {

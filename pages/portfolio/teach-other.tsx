@@ -13,7 +13,7 @@ const TeachOther: React.FC = () => {
     <>
       <Head>
         <title>Teach Other | Portfolio | Daniel Berg</title>
-        <meta name="og:title" property="og:title" content="Desafio Bossabox" />
+        <meta name="og:title" property="og:title" content="Teach Other" />
         <meta
           name="description"
           content="Plataforma de agendamento de aula particular usando o NextJS"
