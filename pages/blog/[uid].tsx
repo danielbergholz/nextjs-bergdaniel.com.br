@@ -1,9 +1,12 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
 import Prismic from 'prismic-javascript';
 import { RichText } from 'prismic-reactjs';
 import { Document } from 'prismic-javascript/types/documents';
+import { MdArrowBack } from 'react-icons/md';
 
+import Button from '../../components/Button';
 import { Container, AspectRatio } from '../../styles/blog/uid/styles';
 import { client } from '../../utils/prismic-configuration';
 
@@ -31,17 +34,28 @@ export default function BlogPost({ post }: PropTypes): JSX.Element {
       <Container>
         {RichText.render(post.data.title)}
         <span>{post.data.formattedDate}</span>
-        <AspectRatio>
-          <iframe
-            title="videoPlayer"
-            src={`https://www.youtube.com/embed/${post.data.video_id}?rel=0`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </AspectRatio>
+        {post?.data?.video_id && (
+          <AspectRatio>
+            <iframe
+              title="videoPlayer"
+              src={`https://www.youtube.com/embed/${post.data.video_id}?rel=0`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </AspectRatio>
+        )}
 
         {post.data.body.map((section) => RichText.render(section.primary.text))}
+
+        <Link href="/blog">
+          <a>
+            <Button>
+              <MdArrowBack size={25} color="#fff" />
+              Voltar
+            </Button>
+          </a>
+        </Link>
       </Container>
     </>
   );

@@ -6,18 +6,26 @@ export const Container = styled.main`
   animation: loadAnimation;
   animation-duration: 500ms;
 
-  h1:first-child {
+  h1 {
     text-align: center;
+    font-size: 32px;
   }
 
-  h1 {
-    font-weight: 700;
-    font-family: 'Source Sans Pro', sans-serif;
+  h2 {
     font-size: 30px;
   }
 
+  h1,
+  h2 {
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
   p {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 
   span {
@@ -25,6 +33,19 @@ export const Container = styled.main`
     display: block;
     font-size: 16px;
     color: #64f4ac;
+    margin-bottom: 40px;
+  }
+
+  img {
+    border-radius: 4px;
+    margin: 40px auto 40px auto;
+    display: block;
+    max-width: 100%;
+  }
+
+  button {
+    margin: 40px auto 40px auto;
+    text-align: center;
   }
 
   @media (max-width: 950px) {
@@ -33,6 +54,11 @@ export const Container = styled.main`
 
     h1 {
       font-size: 28px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 26px;
     }
 
     p {
