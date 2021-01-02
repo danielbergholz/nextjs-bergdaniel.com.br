@@ -40,8 +40,14 @@ export default function Portfolio(): JSX.Element {
           - Emprego atual:
           <span>
             {' '}
-            Trabalho como desenvolvedor Frontend (ReactJS + Typescript) na
-            Talent Four Consulting
+            Trabalho como desenvolvedor Frontend (ReactJS + Typescript) no{' '}
+            <a
+              href="https://bbnk.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              BBNK
+            </a>
           </span>
         </strong>
 
