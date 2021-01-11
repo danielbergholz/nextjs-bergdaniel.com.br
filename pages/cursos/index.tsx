@@ -60,6 +60,33 @@ export default function Cursos({
         />
       </Head>
       <Container>
+        <h1>
+          Conteúdos
+          <Gold> premium</Gold>
+        </h1>
+        <CourseList>
+          <Course>
+            <a>
+              <Link href="/cursos/o-guia-do-dev-frontend">
+                <Thumbnail>
+                  <img
+                    src="/assets/o_guia_do_dev_frontend.png"
+                    alt="O guia do desenvolvedor frontend"
+                  />
+                </Thumbnail>
+              </Link>
+            </a>
+            <span>E-book: O Guia do Dev Frontend</span>
+          </Course>
+
+          <Course>
+            <Thumbnail id="thumbnail">
+              <p>em breve</p>
+            </Thumbnail>
+            <span>Curso de React</span>
+          </Course>
+        </CourseList>
+
         <h1>Cursos gratuitos</h1>
         <CourseList>
           {CoursesPlaylists.map((playlist: PlaylistItem) => (
@@ -77,26 +104,6 @@ export default function Cursos({
               <span>{playlist.snippet.title}</span>
             </Course>
           ))}
-        </CourseList>
-
-        <h1>
-          Cursos
-          <Gold> premium</Gold>
-        </h1>
-        <CourseList>
-          <Course>
-            <Thumbnail id="thumbnail">
-              <p>em breve</p>
-            </Thumbnail>
-            <span>O guia do Dev Frontend</span>
-          </Course>
-
-          <Course>
-            <Thumbnail id="thumbnail">
-              <p>em breve</p>
-            </Thumbnail>
-            <span>Curso de React</span>
-          </Course>
         </CourseList>
 
         <h1>Outros conteúdos</h1>
