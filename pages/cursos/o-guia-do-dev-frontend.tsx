@@ -39,8 +39,12 @@ export default function Ebook(): JSX.Element {
                 A base teórica que faltava para a próxima geração de
                 Desenvolvedores Frontend
               </h2>
-              <Button>
-                <a href="https://sun.eduzz.com/697109">Comprar</a>
+              <Button
+                link="https://sun.eduzz.com/697109"
+                backgroundColor="#D74B4B"
+                backgroundHoverColor="#FC5E5E"
+              >
+                Comprar
               </Button>
             </BigText>
             <img
@@ -86,7 +90,7 @@ export default function Ebook(): JSX.Element {
             alt="Conteúdos abordados no E-book: O guia do dev frontend"
           />
           <RightText>
-            <h1>O que será abordado?</h1>
+            <h1>O que você vai aprender?</h1>
             <h2>
               Iremos começar fazendo uma introdução teórica em alguns conceitos,
               para todo mundo começar o e-book com a mesma base e em seguida
@@ -160,8 +164,12 @@ export default function Ebook(): JSX.Element {
         </Faq>
 
         <AlignButton>
-          <Button>
-            <a href="https://sun.eduzz.com/697109">Comprar e-book</a>
+          <Button
+            link="https://sun.eduzz.com/697109"
+            backgroundColor="#D74B4B"
+            backgroundHoverColor="#FC5E5E"
+          >
+            Comprar e-book
           </Button>
         </AlignButton>
       </Container>
