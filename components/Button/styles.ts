@@ -1,19 +1,25 @@
 import styled from 'styled-components';
 
-export const StyledButton = styled.button`
+interface ButtonProps {
+  backgroundColor?: string;
+  backgroundHoverColor?: string;
+  color?: string;
+}
+
+export const StyledButton = styled.button<ButtonProps>`
   display: flex;
   align-items: center;
   padding: 10px;
   border-radius: 6px;
-  background-color: #6473f5;
-  color: #fff;
+  background-color: ${(props) => props.backgroundColor || '#6473f5'};
+  color: ${(props) => props.color || '#fff'};
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   font-size: 21px;
   transition: background-color 200ms;
 
   &:hover {
-    background-color: #8692ff;
+    background-color: ${(props) => props.backgroundHoverColor || '#8692ff'};
   }
 
   svg {
