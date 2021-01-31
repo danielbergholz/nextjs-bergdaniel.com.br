@@ -146,7 +146,15 @@ export default function Ebook(): JSX.Element {
             seu e-book no formato PDF.
           </p>
 
-          <h2>Onde eu tiro dúvidas sobre o e-book?</h2>
+          <h2>Posso comprar o e-book se eu programar em Angular ou Vue?</h2>
+          <p>
+            Sim! O intuito do e-book é explicar as tecnologias e arquiteturas
+            por trás dos frameworks, independente deles serem baseados no React,
+            Vue ou Angular. Contudo, a minha área de expertise é o React, então
+            a maioria dos exemplos nesse livro são baseados nele.
+          </p>
+
+          <h2>Onde eu posso tirar outras dúvidas?</h2>
           <p>
             Você pode mandar suas dúvidas no nosso grupo do Discord! Basta
             clicar{' '}
