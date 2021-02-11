@@ -66,16 +66,16 @@ export default function Cursos({
         </h1>
         <CourseList>
           <Course>
-            <a>
-              <Link href="/cursos/o-guia-do-dev-frontend">
+            <Link href="/cursos/o-guia-do-dev-frontend">
+              <a>
                 <Thumbnail>
                   <img
                     src="/assets/o_guia_do_dev_frontend.png"
                     alt="O guia do desenvolvedor frontend"
                   />
                 </Thumbnail>
-              </Link>
-            </a>
+              </a>
+            </Link>
             <span>E-book: O Guia do Dev Frontend</span>
           </Course>
 
