@@ -25,6 +25,10 @@ export const Container = styled.main`
     font-weight: 400;
   }
 
+  button {
+    margin-top: 10px;
+  }
+
   @media (max-width: 700px) {
     h1 {
       text-align: center;
@@ -34,6 +38,10 @@ export const Container = styled.main`
     strong,
     span {
       font-size: 16px;
+    }
+
+    button {
+      margin: 10px auto 0 auto;
     }
   }
 `;

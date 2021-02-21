@@ -103,6 +103,10 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
           #thumbnail {
             background-color: #4a4b50;
           }
+
+          #green-text {
+            color: #64f4ac;
+          }
         `
       : css`
           body {
@@ -132,6 +136,10 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
 
           #thumbnail {
             background-color: #c4c4c4;
+          }
+
+          #green-text {
+            color: #2dbf76;
           }
         `}
 `;

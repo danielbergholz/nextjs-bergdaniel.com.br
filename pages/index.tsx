@@ -57,7 +57,7 @@ export default function Home(): JSX.Element {
               Trabalho no desenvolvimento de aplicações web performáticas e com
               foco na experiência de usuário
             </h2>
-            <p>
+            <p id="green-text">
               Tecnologias que já utilizei: Node, Adonis, React, Gatsby e Next
             </p>
           </RightText>

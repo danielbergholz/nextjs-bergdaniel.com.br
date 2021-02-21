@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import { FaFilePdf } from 'react-icons/fa';
 
 import { Container, Project, Text } from '../../styles/portfolio/styles';
 import Button from '../../components/Button';
+import SpecialButton from '../../components/SpecialButton';
 
 export default function Portfolio(): JSX.Element {
   return (
@@ -40,16 +42,46 @@ export default function Portfolio(): JSX.Element {
           - Emprego atual:
           <span>
             {' '}
-            Trabalho como desenvolvedor Frontend (ReactJS + Typescript) no{' '}
+            Trabalho como desenvolvedor Frontend (NextJS + Typescript) na{' '}
             <a
-              href="https://bbnk.com.br"
+              href="https://ubistart.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ubistart
+            </a>{' '}
+            com foco na criação de um e-commerce.
+          </span>
+        </strong>
+        <strong>
+          - Empregos anteriores:
+          <span>
+            {' '}
+            Fui desenvolvedor Frontend (ReactJS + Typescript) na{' '}
+            <a
+              href="http://talentfour.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Talent Four Consulting
+            </a>{' '}
+            e no{' '}
+            <a
+              href="https://bbnk.com.br/"
               target="_blank"
               rel="noopener noreferrer"
             >
               BBNK
-            </a>
+            </a>{' '}
+            com foco em features para a plataforma web de internet banking e
+            dashboard interno.
           </span>
         </strong>
+
+        <SpecialButton link="/download/cv_daniel_bergholz.pdf">
+          <FaFilePdf color="#64f4ac" />
+          Currículo
+        </SpecialButton>
 
         <h1>Projetos</h1>
 

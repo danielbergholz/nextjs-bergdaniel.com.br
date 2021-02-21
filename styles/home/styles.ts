@@ -37,7 +37,6 @@ export const RightText = styled.section`
     margin-top: 5px;
     display: block;
     font-size: 22px;
-    color: #64f4ac;
   }
 
   @media (max-width: 750px) {
