@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import { FaFilePdf } from 'react-icons/fa';
+// import { FaFilePdf } from 'react-icons/fa';
 
 import { Container, Project, Text } from '../../styles/portfolio/styles';
 import Button from '../../components/Button';
-import SpecialButton from '../../components/SpecialButton';
+// import SpecialButton from '../../components/SpecialButton';
 
 export default function Portfolio(): JSX.Element {
   return (
@@ -22,10 +22,6 @@ export default function Portfolio(): JSX.Element {
         <strong>
           - Graduação:
           <span> Graduando em Engenharia de Redes de Comunicações na UnB</span>
-        </strong>
-        <strong>
-          - Bootcamp:
-          <span> Sou formado no Bootcamp GoStack da Rocketseat</span>
         </strong>
         <strong>
           - Estágio:
@@ -78,10 +74,10 @@ export default function Portfolio(): JSX.Element {
           </span>
         </strong>
 
-        <SpecialButton link="/download/cv_daniel_bergholz.pdf">
+        {/* <SpecialButton link="/download/cv_daniel_bergholz.pdf">
           <FaFilePdf color="#64f4ac" />
           Currículo
-        </SpecialButton>
+        </SpecialButton> */}
 
         <h1>Projetos</h1>
 
@@ -183,30 +179,6 @@ export default function Portfolio(): JSX.Element {
               </span>
             </strong>
             <Link href="/portfolio/astromuri">
-              <a>
-                <Button>ver mais</Button>
-              </a>
-            </Link>
-          </Text>
-        </Project>
-
-        <Project>
-          <img src="/assets/rocketseat.png" alt="Logo Rocketseat" />
-          <Text>
-            <strong>
-              - Função:
-              <span> Desenvolvedor Fullstack</span>
-            </strong>
-            <br />
-            <strong>
-              - Descrição:
-              <span>
-                {' '}
-                Bootcamp GoStack. Abordou os seguintes temas: ReactJS, React
-                Native e NodeJS com Typescript.
-              </span>
-            </strong>
-            <Link href="/portfolio/rocketseat">
               <a>
                 <Button>ver mais</Button>
               </a>
