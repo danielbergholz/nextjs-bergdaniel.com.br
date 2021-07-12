@@ -58,7 +58,7 @@ export default function Home(): JSX.Element {
               foco na experiência de usuário
             </h2>
             <p id="green-text">
-              Tecnologias que já utilizei: Node, Adonis, React, Gatsby e Next
+              Tecnologias que já utilizei: Adonis, Nest, React, e Next
             </p>
           </RightText>
         </Hello>
