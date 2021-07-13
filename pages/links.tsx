@@ -22,13 +22,17 @@ const Home: React.FC = () => {
         <img src="/assets/berg.png" alt="Foto de perfil Berg" />
         <ButtonsContainer>
           <a
-            href="https://www.youtube.com/channel/UCnmbV9eyMwIl50Ji1ObFxqg/videos"
+            href="https://www.maratonas.academy/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button color="#C71D1F">
-              <FaYoutube size={30} color="#fff" />
-              <h1>YouTube</h1>
+            <Button color="#FF4C00">
+              <img
+                src="/assets/maratonas.png"
+                alt="Maratonas Academy"
+                width="25px"
+              />
+              <h1>Maratonas Academy</h1>
             </Button>
           </a>
 
@@ -40,6 +44,17 @@ const Home: React.FC = () => {
             <Button color="#7289D7">
               <FaDiscord size={30} color="#fff" />
               <h1>Discord</h1>
+            </Button>
+          </a>
+
+          <a
+            href="https://www.youtube.com/channel/UCnmbV9eyMwIl50Ji1ObFxqg/videos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button color="#C71D1F">
+              <FaYoutube size={30} color="#fff" />
+              <h1>YouTube</h1>
             </Button>
           </a>
 

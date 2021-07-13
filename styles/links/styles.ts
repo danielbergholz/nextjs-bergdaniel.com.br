@@ -32,7 +32,7 @@ export const Button = styled.button<{ color?: string; fontColor?: string }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 220px;
+  width: 260px;
   background-color: ${(props) => props.color || '#000'};
   border: none;
   border-radius: 4px;
