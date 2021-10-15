@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { FaGithub, FaYoutube, FaDiscord } from 'react-icons/fa';
 import { BiBook } from 'react-icons/bi';
-import { BsFillLightningFill } from 'react-icons/bs';
+import { BsFillLightningFill, BsInstagram, BsTwitter } from 'react-icons/bs';
 
 import { Container, Button, ButtonsContainer } from '../styles/links/styles';
 
@@ -21,21 +21,6 @@ const Home: React.FC = () => {
       <Container>
         <img src="/assets/berg.png" alt="Foto de perfil Berg" />
         <ButtonsContainer>
-          <a
-            href="https://www.maratonas.academy/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button color="#FF4C00">
-              <img
-                src="/assets/maratonas.png"
-                alt="Maratonas Academy"
-                width="25px"
-              />
-              <h1>Maratonas Academy</h1>
-            </Button>
-          </a>
-
           <a
             href="https://discord.gg/PkWraebbfY"
             target="_blank"
@@ -55,6 +40,28 @@ const Home: React.FC = () => {
             <Button color="#C71D1F">
               <FaYoutube size={30} color="#fff" />
               <h1>YouTube</h1>
+            </Button>
+          </a>
+
+          <a
+            href="https://twitter.com/danielberg_"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button color="#3dace2">
+              <BsTwitter size={30} color="#fff" />
+              <h1>Twitter</h1>
+            </Button>
+          </a>
+
+          <a
+            href="https://www.instagram.com/berg.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button color="#e23dcc">
+              <BsInstagram size={26} color="#fff" />
+              <h1>Instagram</h1>
             </Button>
           </a>
 
