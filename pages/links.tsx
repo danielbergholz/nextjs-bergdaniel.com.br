@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import { FaGithub, FaYoutube, FaDiscord } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaDiscord, FaHeart } from 'react-icons/fa';
 import { BiBook } from 'react-icons/bi';
 import { BsFillLightningFill, BsInstagram, BsTwitter } from 'react-icons/bs';
 
@@ -22,6 +22,17 @@ const Home: React.FC = () => {
         <img src="/assets/berg.png" alt="Foto de perfil Berg" />
         <ButtonsContainer>
           <a
+            href="https://www.youtube.com/c/DanielBergholz/join"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button color="#F88E8E">
+              <FaHeart size={30} color="#fff" />
+              <h1>Apoie o Canal!</h1>
+            </Button>
+          </a>
+
+          <a
             href="https://discord.gg/PkWraebbfY"
             target="_blank"
             rel="noopener noreferrer"
@@ -33,7 +44,7 @@ const Home: React.FC = () => {
           </a>
 
           <a
-            href="https://www.youtube.com/channel/UCnmbV9eyMwIl50Ji1ObFxqg/videos"
+            href="https://www.youtube.com/c/DanielBergholz/videos"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -42,6 +53,15 @@ const Home: React.FC = () => {
               <h1>YouTube</h1>
             </Button>
           </a>
+
+          <Link href="/cursos">
+            <a>
+              <Button color="#59C28E">
+                <BsFillLightningFill size={30} color="#fff" />
+                <h1>Cursos</h1>
+              </Button>
+            </a>
+          </Link>
 
           <a
             href="https://twitter.com/danielberg_"
@@ -64,15 +84,6 @@ const Home: React.FC = () => {
               <h1>Instagram</h1>
             </Button>
           </a>
-
-          <Link href="/cursos">
-            <a>
-              <Button color="#59C28E">
-                <BsFillLightningFill size={30} color="#fff" />
-                <h1>Cursos</h1>
-              </Button>
-            </a>
-          </Link>
 
           <Link href="/blog">
             <a>
