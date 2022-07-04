@@ -278,5 +278,7 @@ export const getStaticProps: GetStaticProps = async ({ params }: PathProps) => {
       data: filteredData,
       courseInfo: mapSlugToProperties[params.slug],
     },
+    // once per week = 60 * 60 * 24 * 7
+    revalidate: 604800,
   };
 };

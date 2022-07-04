@@ -166,5 +166,7 @@ export const getStaticProps: GetStaticProps = async () => {
       CoursesPlaylists,
       OtherPlaylists,
     },
+    // once per week = 60 * 60 * 24 * 7
+    revalidate: 604800,
   };
 };
